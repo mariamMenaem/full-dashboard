@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="dist/css/main.css">
+</head>
+
+<body>
+    <div class="form-box-container">
+        <div class="form-box">
+            <div class="form-title">
+                <h3>Create Account</h3>
+            </div>
+            <div class="grid-group">
+                <div class="grid-4 text-box">
+                    <input type="text" name="name" placeholder="Full Name" required>
+                </div>
+                <div class="grid-4 text-box">
+                    <input type="email" name="email" placeholder="Email" required>
+                </div>
+            </div>
+            <div class="grid-group">
+                <div class="grid-4 text-box">
+                    <input type="text" name="user" placeholder="User Name" required>
+                </div>
+                <div class="grid-4 text-box">
+                    <input type="radio" name="gender" value="male" checked> <span>Male</span>
+                    <input type="radio" name="gender" value="female"> <span>Female</span>
+                </div>
+            </div>
+            <div class="grid-group">
+                <div class="grid-4 text-box">
+                    <input type="password" name="password" placeholder="Password" class="password" required>
+                </div>
+                <div class="grid-4 text-box">
+                    <input type="password" name="password" placeholder="Confirm Password" class="confirm-password" required>
+                    <span class="check"><i class="fa fa-check"></i></span>
+                </div>
+                <!-- <div class="checker"></div> -->
+            </div>
+            <div class="grid-group">
+                <div class="progress-bar-wrap grid-2">
+                    <div class="progress-bar_item"></div>
+                    <div class="progress-bar_item"></div>
+                    <div class="progress-bar_item"></div>
+                    <!-- <span class="progress-bar_text">Password is blank</span> -->
+                </div>
+            </div>  
+            <div class="submit-btn">
+                <button class="submit"><a href="dashboard.html">Sign Up</a></button>
+                <!-- <input type="button" value="Sign Up"> -->
+            </div>
+        </div>
+    </div>
+
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

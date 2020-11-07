@@ -1,0 +1,7 @@
+@mixin float-handler {
+    &::before , &::after{
+        content: "";
+        display: table;
+        clear: both;
+    }
+}

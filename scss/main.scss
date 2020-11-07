@@ -1,0 +1,109 @@
+@import "./resets";
+@import "./mixines";
+@import "./variables";
+@import "./signUp";
+
+@for $i from 1 through $grid-columns {
+    .grid-#{$i} {
+      width: $full_width / $i
+    }
+
+    
+ }
+
+.app-wrapper {
+    @include float-handler;
+    .sidebar-wrapper {
+        float: left;
+        color: $font-color ;
+        min-height: 100vh;
+        min-width: 20%;
+        background-color: $base-color;
+        border: 1px solid $dark-base-color;
+        border-radius: 20px;
+        box-shadow: 2px 2px 5px grey;
+
+        .sidebar-heading {
+            font-size: 20px;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+            line-height: 50px;
+            text-align: center;
+            background: $dark-base-color;
+            text-transform: capitalize;
+        }
+
+        .menue-item{
+            height: 65px;
+            width: 100%;
+            line-height: 65px;
+            padding-left: 30px;
+            border-bottom: 1px solid $dark-base-color;
+            border-top: 1px solid $dark-base-color;
+            border-left: 5px solid transparent;
+            font-family: 'Open Sans', sans-serif;
+            transition: all .5s ease;
+        
+            a{
+                color: $font-color;
+                text-transform: capitalize;
+            }
+            &:hover{
+                border-left: 5px solid $font-color;
+                a{
+                    color: $font-color;
+                }
+            }
+        }
+    }
+
+    .content-wrapper {
+        float: right;
+        width: 80%;
+        height: 100vh;
+        overflow: auto;
+
+        .tab {
+            width: 90%;
+            margin: 5px auto;
+            .tab-header{
+                display: flex;
+                align-items: center;
+                justify-content: left;
+                height: 40px;
+                font-size: 20px;
+                .tab-link{
+                    padding: 5px 10px;
+                    height: 100%;
+        
+                    &.active-link{
+                        border: 5px solid $font-color;
+                        border-bottom: none;
+                        border-radius: 10px;
+                    }
+                }
+            }
+        
+            .tab-content{
+                overflow: hidden;
+                div{
+                    display: none;
+                    padding: 6px 12px;
+                    border-radius: 10px;
+        
+                    &.active-content{
+                        display: block;
+                        border-top: none;
+                        border: 1px solid $font-color;
+                    }
+                }
+            }
+          }
+    }
+}
+
+
+
+
+  
+
